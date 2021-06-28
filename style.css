@@ -168,3 +168,94 @@ header ul li a:hover,
 .sci li a:hover img { 
     transform: scale(1) rotate(360deg);
 }
+
+@media (max-width: 1200px) {
+    .container {
+        position: relative;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 1110px) {
+    section {
+        padding: 50px 10px 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: auto 20px;
+    }
+
+    .container .content {
+        transform: translateX(0px);
+        max-width: 100%;
+        margin-top: -50px;
+        padding: 30px;
+    }
+
+    header {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        top: -80px;
+        right: 0;
+        left: 0;
+    }
+
+    header ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin-top: 4px;
+    }
+
+    header ul li a {
+        display: inline-block;
+    }
+
+    .sci {
+        position: relative;
+        flex-direction: row;
+        left: 0;
+    }
+
+    .sci li a {
+        margin: 0 10px;        
+    }
+
+    @keyframes animate {
+        0%, 100% {
+            transform: translateY(-20px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+    }
+
+    .imageBox {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .content h2 {
+        font-size: 1.5em;
+        color: #8a2435;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .imageBox img {
+        max-width: 300px;
+    }
+
+    .sci {
+        margin-bottom: 0;
+    }
+}
